@@ -5,7 +5,7 @@ import { Counter } from "./components/Counter"
 function App() {
   return <div>
     <Counter>
-      {(count, setCount) => (
+      {({ count, setCount }) => (
         <div>
           {count}
           <button onClick={()=> setCount(count + 1)}>+</button>
